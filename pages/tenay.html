@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weledo liban 4 Shimota - Simon</title>
+
+  <!-- IMPORTANT: simon.html is inside /pages, so go up one level -->
+  <link href="../css/styles.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body class="home">
+
+  <ul class="social">
+    <li><a href=""><img src="../images/facebook.jpg" alt="Facebook"></a></li>
+    <li><a href=""><img src="../images/TikTok.jpg" alt="TikTok"></a></li>
+    <li><a href=""><img src="../images/instagram.jpg" alt="instagram"></a></li>
+    <li><a href=""><img src="../images/youtube.jpg" alt="YouTube"></a></li>
+    <li><a href=""><img src="../images/x-logo.jpg" alt="X-News"></a></li>
+  </ul>
+
+  <header>
+    <div class="inner-header">
+      <a href="../index.html">
+        <img id="logo" src="../images/4shlogo.png" alt="Logo" />
+      </a>
+    </div>
+
+    <nav id="primary">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../tours.html">Tours</a></li>
+        <li><a href="../weledo.html">ወሎዶ</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+
+        <!-- Toggle next to Contact (ON by default) -->
+        <li class="nav-toggle">
+          <label title="ON: click nodes opens info. OFF: drag nodes.">
+            <input type="checkbox" id="modeToggle" checked>
+            <span>Open</span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="wrapper">
+    <div id="hero">
+      <h7>ወለዶ ሓረግ ጤናይ</h7>
+
+      <!-- Reset button stays for you, but is hidden from users by CSS -->
+      <button id="resetLayout" class="reset-btn">Reset Layout</button>
+
+      <div class="chart" id="chart">
+        <!-- NODES -->
+        <div class="node cat-root" id="root">ወለዶ ጤናይ</div>
+
+        <div class="node cat-parent" id="p1">ወልደማርያም</div>
+        <div class="node cat-parent" id="p2">ገብረማርያም</div>
+        <div class="node cat-parent" id="p3">ነማርያም</div>
+        <div class="node cat-parent" id="p4">ልዱ</div>
+        <div class="node cat-parent" id="p5">ሰራህያ</div>
+        <div class="node cat-parent" id="p6">ጤናይ</div>
+
+        <div class="node cat-child" id="c1">ተስፉ</div>
+        <div class="node cat-child" id="c2">ጊላይ</div>
+        <div class="node cat-child" id="c3">ጋንዳይ</div>
+        <div class="node cat-child" id="c4">እሴት</div>
+        <div class="node cat-child" id="c5">ዓንዲት</div>
+        <div class="node cat-child" id="c6">ብኢዳይ</div>
+        <div class="node cat-child" id="c7">ምስሊ</div>
+
+        <div class="node cat-subchild" id="sc1">ተፈሪ</div>
+        <div class="node cat-subchild" id="sc2">ጭሩም</div>
+        <div class="node cat-subchild" id="sc3">ትእምርቱ</div>
+        <div class="node cat-subchild" id="sc4">ጉማላ</div>
+        <div class="node cat-subchild" id="sc5">ክንፈ</div>
+
+        <div class="node cat-subchild" id="ss1">ሃይለ</div>
+        <div class="node cat-subchild" id="ss2">ገርህላሰ</div>
+        <div class="node cat-subchild" id="ss3">ኣመተጼን</div>
+        <div class="node cat-subchild" id="ss4">ደመት</div>
+
+        <div class="node cat-subchild" id="sib1">ሓንቲ ጓል ኣላቶ</div>
+
+        <div class="node cat-subchild" id="n1">ኣርሼማ</div>
+        <div class="node cat-subchild" id="n2">ገርኪኤል</div>
+
+        <div class="node cat-subchild" id="sse1">ማና</div>
+        <div class="node cat-subchild" id="sse2">ምልእቱ</div>
+
+        <div class="node cat-subchild" id="se1">ጥቁረ</div>
+        <div class="node cat-subchild" id="se2">ሃብተጼን</div>
+        <div class="node cat-subchild" id="se3">ዘርኦም</div>
+
+        <div class="node cat-subchild" id="k1">ጓል የብላን</div>
+
+        <!-- SVG CONNECTORS -->
+        <svg id="lines"></svg>
+      </div>
+    </div>
+
+    <main></main>
+
+    <footer>
+      <ul>
+        <li>copyright &copy; 2025</li>
+        <li>All Rights Reserved</li>
+        <li><a href="">Terms of use</a></li>
+        <li><a href="../index.html">Web Design by Eyob</a></li>
+        <li>
+          <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fcompass.northseattle.edu%2F~egobozay%2Fit161%2Ftravel%2Findex.html">
+            <img src="../images/HTML5.jpg" alt="HTML 5 Logo" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+  <!-- IMAGE MODAL (in-page full-size) -->
+  <div id="imageModal" class="image-modal" aria-hidden="true">
+    <span class="image-close" aria-label="Close">&times;</span>
+    <img id="modalImage" alt="Preview">
+  </div>
+
+  <!-- IMPORTANT: simon.html is inside /pages, so go up one level -->
+  <script src="../JS/simon.js"></script>
+</body>
+</html>

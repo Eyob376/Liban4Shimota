@@ -1,0 +1,45 @@
+I want to create an A4 size of family tree chart with long hierarchy of clickable nodes with colored horizontal connectors and vertical arrow connectors on my web site page. On click of each node I will open an image from a folder "Images" and my CSS file will be stored in a folder (Css/Styles.css). I will give you sample image of the chart structure, and my hierarchy details.
+
+4Shimota
+ - Parent1 
+ - Parent2 
+ - Parent3 
+ - Parent4 
+Parent2 
+ - Child1 
+ - Child2 
+ - Child3 
+Child2 
+ - SubChild1 
+ - SubChild2 
+SubChild1 
+ - sibling 
+sibling 
+ - Subsibling1 
+ - Subsibling2 
+Subsibling1 
+ _ Nuny1
+ _ Nuny2
+ _ Nuny3
+Nuny2
+ _ Seed1
+ _ Seed2
+ _ Seed3
+ _ Seed4
+ _ Seed5
+Seed3
+ _ SubSeed1
+ _ SubSeed2
+ _ SubSeed3
+ _ SubSeed4
+ _ SubSeed5
+ _ SubSeed6
+SubSeed3
+ - kido1
+ - kido2
+ - kido3
+ - kido4
+ - kido5
+ - kido6
+ - kido7
+ - kido8
