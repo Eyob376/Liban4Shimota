@@ -49,7 +49,6 @@
             <a href="index.html" class="glass-logo-link">
                 <div class="glass-logo-container">
                     <img id="logo" src="images/4shlogo2.png" alt="Weledo liban 4 Shimota Logo">
-                    <!--<div class="logo-glow"></div> -->
                 </div>
             </a>	 
         </div>  
@@ -67,12 +66,12 @@
 
     <div id="wrapper" class="glass-wrapper">
         <div id="hero" class="glass-hero">
-            <!--<h7 class="glass-title">ወለዶ ሓረግ ኣርባዕተ ሽሞታ</h7>-->
             <p class="glass-subtitle">Get in touch with our community</p>
             
-            <button id="resetLayout" class="reset-btn glass-reset-btn">
-                <i class="fas fa-sync-alt"></i> Reset Layout
-            </button>
+            <!-- Test Mode Indicator -->
+            <div class="test-mode-indicator" id="testModeIndicator">
+                <i class="fas fa-vial"></i> FormSubmit Test Mode Active
+            </div>
             
             <div class="glass-particles">
                 <div class="particle"></div>
@@ -95,69 +94,97 @@
                         <h3 class="form-heading"><i class="fas fa-comments"></i> Contact Our Community</h3>
                         <p class="form-intro">Send us a message and we'll respond to you as soon as possible.</p>
                         
-                    <form id="contactForm" class="glass-form" action="https://formsubmit.co/betiel2017@gmail.com" method="POST">
-    <!-- FormSubmit Hidden Fields -->
-    <input type="hidden" name="_subject" value="New Message from Liban 4 Shimota Website">
-    <input type="hidden" name="_template" value="basic">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://yourusername.github.io/your-repo-name/thank-you.html">
-    <input type="text" name="_honey" style="display:none">
-    <input type="hidden" name="_autoresponse" value="Thank you for contacting Liban 4 Shimota! We have received your message and will respond within 24-48 hours.">
-    
-    <!-- Your form fields (EXACTLY as you have them) -->
-    <div class="form-group">
-        <label for="name"><i class="fas fa-user"></i> Full Name</label>
-        <div class="glass-input-container">
-            <input type="text" id="name" name="name" required placeholder="Your full name">
-            <div class="input-glow"></div>
-        </div>
-    </div>
-    
-    <div class="form-group">
-        <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
-        <div class="glass-input-container">
-            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-            <div class="input-glow"></div>
-        </div>
-    </div>
-    
-    <div class="form-group">
-        <label for="subject"><i class="fas fa-tag"></i> Subject</label>
-        <div class="glass-input-container">
-            <input type="text" id="subject" name="subject" required placeholder="Message subject">
-            <div class="input-glow"></div>
-        </div>
-    </div>
-    
-    <div class="form-group">
-        <label for="message"><i class="fas fa-edit"></i> Message</label>
-        <div class="glass-input-container">
-            <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
-            <div class="input-glow"></div>
-        </div>
-    </div>
-    
-    <div class="form-group">
-        <label for="contactType"><i class="fas fa-question-circle"></i> What is this regarding?</label>
-        <div class="glass-input-container">
-            <select id="contactType" name="contactType" class="glass-select">
-                <option value="">Select an option</option>
-                <option value="general">General Inquiry</option>
-                <option value="membership">Membership Information</option>
-                <option value="events">Upcoming Events</option>
-                <option value="support">Technical Support</option>
-                <option value="other">Other</option>
-            </select>
-            <div class="input-glow"></div>
-        </div>
-    </div>
-    
-    <button type="submit" class="glass-submit-btn">
-        <span class="btn-text">Send Message</span>
-        <i class="fas fa-paper-plane btn-icon"></i>
-        <div class="btn-overlay"></div>
-    </button>
-</form>
+                        <!-- UPDATED FORM WITH FORMSUBMIT.CO -->
+                        <form id="contactForm" class="glass-form" action="https://formsubmit.co/betiel2017@gmail.com" method="POST">
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_subject" value="New Message from Liban 4 Shimota Website">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://Eyob376.github.io/Liban4shimota/thank-you.html">
+                            <input type="hidden" name="_autoresponse" value="Thank you for contacting Liban 4 Shimota! We have received your message and will respond within 24-48 hours.">
+                            <input type="text" name="_honey" style="display:none">
+                            
+                            <!-- Form Fields -->
+                            <div class="form-group">
+                                <label for="name"><i class="fas fa-user"></i> Full Name</label>
+                                <div class="glass-input-container">
+                                    <input type="text" id="name" name="name" required placeholder="Your full name">
+                                    <div class="input-glow"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+                                <div class="glass-input-container">
+                                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                                    <div class="input-glow"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+                                <div class="glass-input-container">
+                                    <input type="text" id="subject" name="subject" required placeholder="Message subject">
+                                    <div class="input-glow"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message"><i class="fas fa-edit"></i> Message</label>
+                                <div class="glass-input-container">
+                                    <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                                    <div class="input-glow"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="contactType"><i class="fas fa-question-circle"></i> What is this regarding?</label>
+                                <div class="glass-input-container">
+                                    <select id="contactType" name="contactType" class="glass-select">
+                                        <option value="">Select an option</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="membership">Membership Information</option>
+                                        <option value="events">Upcoming Events</option>
+                                        <option value="support">Technical Support</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <div class="input-glow"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Test Mode Toggle -->
+                            <div class="test-toggle">
+                                <label>
+                                    <input type="checkbox" id="testModeToggle">
+                                    <span class="toggle-slider"></span>
+                                    <span class="toggle-label">Enable Test Mode (Stay on page)</span>
+                                </label>
+                                <small class="test-hint">When ON: Stay on page with notifications. When OFF: Redirect to FormSubmit.</small>
+                            </div>
+                            
+                            <button type="submit" class="glass-submit-btn" id="submitBtn">
+                                <span class="btn-text" id="btnText">Send Message</span>
+                                <i class="fas fa-paper-plane btn-icon" id="btnIcon"></i>
+                                <div class="btn-overlay"></div>
+                            </button>
+                            
+                            <!-- Test Results Display -->
+                            <div class="test-results" id="testResults" style="display: none;">
+                                <h4><i class="fas fa-clipboard-check"></i> Test Results</h4>
+                                <div class="result-item">
+                                    <span class="result-label">FormSubmit Endpoint:</span>
+                                    <span class="result-value" id="endpointStatus">Pending...</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Data Validation:</span>
+                                    <span class="result-value" id="validationStatus">Pending...</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Submission Status:</span>
+                                    <span class="result-value" id="submissionStatus">Pending...</span>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                     
                     <div class="glass-contact-info">
@@ -198,12 +225,22 @@
                 </div>
             </div>
             
-            <!-- Additional Information Section -->
+            <!-- Test Information Section -->
             <div class="glass-info-section">
-                <h3><i class="fas fa-info-circle"></i> About Our Generation</h3>
+                <h3><i class="fas fa-vial"></i> Form Testing Information</h3>
                 <div class="info-content">
-                    <p>Our Liban 4 Shimota is a community dedicated to preserving and sharing our cultural heritage. We welcome inquiries about membership, events, and collaborations.</p>
-                    <p>Feel free to reach out to us through any of the contact methods listed above. We typically respond within 24-48 hours.</p>
+                    <p><strong>Current Setup:</strong> Using FormSubmit.co for email delivery</p>
+                    <p><strong>Test Mode:</strong> When enabled, the form will stay on the page and show test results. When disabled, it will submit normally to FormSubmit.</p>
+                    <p><strong>What to expect:</strong> After submission, check <strong>Liban4shimota@gmail.com</strong> for the message and an auto-reply confirmation.</p>
+                    <p><strong>Testing Steps:</strong> 
+                        <ol>
+                            <li>Fill out all required fields</li>
+                            <li>Toggle Test Mode ON/OFF as needed</li>
+                            <li>Click "Send Message"</li>
+                            <li>Check console (F12) for detailed logs</li>
+                            <li>Monitor your email for delivery</li>
+                        </ol>
+                    </p>
                 </div>
             </div>
         </main>
@@ -230,6 +267,7 @@
     </div>
     
     <!-- JavaScript for Interactive Effects -->
-    	<script src="JS/script.js"></script>
+    <script src="JS/script.js"></script>
 </body>
+</html>
 </html>
