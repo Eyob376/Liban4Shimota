@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weledo Chart-liban 4 Shimota</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="weledo">
+    
+    <!-- Glass Morphism Social Media Bar -->
+    <div class="glass-social-container">
+        <ul class="social glass-social">
+            <li><a href="" class="glass-social-icon">
+                <img src="images/facebook.jpg" alt="Facebook">
+                <div class="social-overlay"></div>
+            </a></li>
+            <li><a href="" class="glass-social-icon">
+                <img src="images/TikTok.jpg" alt="TikTok">
+                <div class="social-overlay"></div>
+            </a></li>
+            <li><a href="" class="glass-social-icon">
+                <img src="images/instagram.jpg" alt="instagram">
+                <div class="social-overlay"></div>
+            </a></li>
+            <li><a href="" class="glass-social-icon">
+                <img src="images/youtube.jpg" alt="YouTube">
+                <div class="social-overlay"></div>
+            </a></li>
+            <li><a href="" class="glass-social-icon">
+                <img src="images/x-logo.jpg" alt="X-News">
+                <div class="social-overlay"></div>
+            </a></li>
+        </ul>
+    </div>
+
+    <!-- Glass Morphism Header -->
+    <header class="glass-header">
+        <div class="glass-header-background">
+            <div class="glass-spiral spiral-1"></div>
+            <div class="glass-spiral spiral-2"></div>
+            <div class="glass-blob blob-1"></div>
+            <div class="glass-highlight"></div>
+        </div>
+        
+        <div class="inner-header glass-inner-header"> 
+            <a href="index.html" class="glass-logo-link">
+                <div class="glass-logo-container">
+                    <img id="logo" src="images/4shlogo2.png" alt="Weledo liban 4 Shimota Logo">
+                    <!--<div class="logo-glow"></div> -->
+                </div>
+            </a>	 
+        </div>  
+        
+        <nav id="primary" class="glass-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="tours.html"><i class="fas fa-map-marked-alt"></i> Tours</a></li>
+                <li><a href="weledo.html"><i class="fas fa-users"></i> Weledo</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            <li class="nav-toggle">
+            <label title="ON: click nodes opens image/page (drag disabled). OFF: drag nodes (click does nothing).">
+            <input type="checkbox" id="modeToggle" checked>
+            <span></span>
+            </label>
+        </li>
+			</ul>
+        </nav>
+    </header>
+
+  <div id="wrapper">
+
+    <div id="hero">
+      <h7>ወለዶ ሓረግ ኣርባዕተ ሽሞታ</h7>
+      <!-- Reset exists but is hidden via CSS (users won't see it) -->
+      <button id="resetLayout" class="reset-btn">Reset Layout</button>
+
+      <div class="chart" id="chart">
+        <!-- NODES -->
+        <div class="node cat-root" id="root">ኣርባዕተ ሽሞታ</div>
+
+        <div class="node cat-parent" id="p1">ጸጋው</div>
+        <div class="node cat-parent" id="p2">መንቆርዮስ</div>
+        <div class="node cat-parent" id="p3">ዕሻ</div>
+        <div class="node cat-parent" id="p4">ሓነ</div>
+
+        <div class="node cat-child" id="c1">ቖቛሕ</div>
+        <div class="node cat-child" id="c2">ገረድ</div>
+        <div class="node cat-child" id="c3">ንኩሉ-ሓመድ</div>
+
+        <div class="node cat-subchild" id="sc1">ማሃላኣብ</div>
+        <div class="node cat-subchild" id="sc2">ሱራቢኤል</div>
+
+        <div class="node cat-sibling" id="sib">ተከሬዛው</div>
+
+        <div class="node cat-subsibling" id="ss1">ገረድዝጊ</div>
+        <div class="node cat-subsibling" id="ss2">ገብረዝጊ</div>
+
+        <div class="node cat-nuny" id="n1">ሕድርንኪኤል</div>
+        <div class="node cat-nuny" id="n2">ዓንደንኪኤል</div>
+        <div class="node cat-nuny" id="n3">ተኽለንኪኤል</div>
+
+        <div class="node cat-seed" id="se1">ጓዕሽም</div>
+        <div class="node cat-seed" id="se2">ፎቶ</div>
+        <div class="node cat-seed" id="se3">ዓጽመገርግሽ</div>
+        <div class="node cat-seed" id="se4">ጋህስ</div>
+        <div class="node cat-seed" id="se5">ሰረቐ</div>
+
+        <div class="node cat-subseed" id="sse1">ዓንዳይ</div>
+        <div class="node cat-subseed" id="sse2">ተኽልያ</div>
+        <div class="node cat-subseed" id="sse3">ጽጊት</div>
+        <div class="node cat-subseed" id="sse4">ራእሳት</div>
+        <div class="node cat-subseed" id="sse5">ወልዱ</div>
+        <div class="node cat-subseed" id="sse6">ደበሳይ</div>
+
+        <div class="node cat-kido" id="k1">ወልዱ</div>
+        <div class="node cat-kido" id="k2">ታቦት</div>
+        <div class="node cat-kido" id="k3">ስምዕን</div>
+        <div class="node cat-kido" id="k4">ዂዒታ</div>
+        <div class="node cat-kido" id="k5">ጎለም</div>
+        <div class="node cat-kido" id="k6">ኣዋነት</div>
+        <div class="node cat-kido" id="k7">እትየ-ለቱ</div>
+        <div class="node cat-kido" id="k8">እትየ-እዝግሃርያ</div>
+
+        <!-- SVG CONNECTORS -->
+        <svg id="lines"></svg>
+      </div>
+    </div>
+
+    <main></main>
+
+    <footer>
+      <ul>
+        <li>copyright &copy; 2025</li>
+        <li>All Rights Reserved</li>
+        <li><a href="">Terms of use</a></li>
+        <li><a href="../index.html">Web Design by Eyob</a></li>
+        <li>
+          <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fcompass.northseattle.edu%2F~egobozay%2Fit161%2Ftravel%2Findex.html">
+            <img src="images/HTML5.jpg" alt="HTML 5 Logo">
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+  <!-- IMAGE MODAL (opens inside page, not a new tab) -->
+  <div id="imageModal" class="image-modal" aria-hidden="true">
+    <span class="image-close" aria-label="Close">&times;</span>
+    <img id="modalImage" alt="Preview">
+  </div>
+
+  <!-- IMPORTANT: match folder case exactly -->
+  <script src="js/chart.js"></script>
+   <script src="js/script.js"></script>
+</body>
+</html>
